@@ -17,17 +17,9 @@ import UIKit
 public func BGPrint<T>(message : T, file : String = #file, lineNumber : Int = #line){
     #if DEBUG
     let fileName = (file as NSString).lastPathComponent
-    print("📝 [\(fileName):line:\(lineNumber)]- \(NSDate().getNowTime())- \(message)")
+    print("📝 [\(fileName):line:\(lineNumber)]- \(NSDate().nowTime)- \(message)")
     
     #endif
-}
-
-///打印当前线程日志
-public func BGPrintThread(){
-    Thread().printMainThread()
-    Thread().printCurrentThread()
-    Thread().printIsMainThread()
-    //BGPrint(message: Thread.callStackSymbols)
 }
 
 

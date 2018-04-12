@@ -10,21 +10,19 @@ import UIKit
 
 extension Thread {
     
-    /// 当前线程
-    public func printCurrentThread(){
+    public var currentThreadSring:String{
         let currentThread = Thread.current
-        BGPrint(message: "当前线程为:\(currentThread)")
+        return "当前线程为:\(currentThread)"
     }
     
-    /// 打印主线程名称
-    public func printMainThread() {
-        let mainThread = Thread.main
-        BGPrint(message: "应用程序的主线程:\(mainThread)")
+    public var mainThreadSring:String{
+        let mainThread = self.main
+        return "应用程序的主线程:\(mainThread)"
     }
     
-    public func printIsMainThread() {
-        let isMain = Thread.isMainThread
-        BGPrint(message: "当前是否是主线程:\(isMain)")
+    public var isMainThread:String{
+        let isMain = self.isMainThread
+        return "应用程序的主线程:\(isMain)"
     }
     
     
