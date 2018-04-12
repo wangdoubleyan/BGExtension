@@ -20,6 +20,12 @@ extension String {
         return digest.digest
     }
     
+    /// 时间戳转换成时间
+    public var timeStampToDate:Date {
+        let timeInterval:TimeInterval = TimeInterval(self)!
+        return Date(timeIntervalSince1970: timeInterval)
+    }
+    
     /// 获取内容宽度
     ///
     /// - Parameters:

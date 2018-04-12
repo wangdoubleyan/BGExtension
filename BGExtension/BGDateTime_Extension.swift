@@ -9,14 +9,10 @@
 import UIKit
 
 public extension NSDate {
-    /// 时间戳转换成时间
-    public func timeStampToDate(timeStamp:String) -> Date {
-        let timeInterval:TimeInterval = TimeInterval(timeStamp)!
-        return Date(timeIntervalSince1970: timeInterval)
-    }
+
     
     /// 获取当前的时间戳
-    public func getNowTimeStamp() -> String {
+    public var nowTimeStamp:String{
         let now = Date()
         let dformatter = DateFormatter()
         dformatter.dateFormat = "yyyy年MM月dd日 HH:mm:ss"
@@ -24,19 +20,20 @@ public extension NSDate {
         return String(timeInterval)
     }
     
-    /// 获取当前的时间戳
-    public func getNowTime() -> String {
+    /// 获取URL时间戳
+    public var urlTimeStamp:String{
+        let now = Date()
+        let dformatter = DateFormatter()
+        dformatter.dateFormat = "HHmmss"
+        return dformatter.string(from: now)
+    }
+    
+    /// 当前的时间戳
+    public var nowTime:String{
         let now = Date()
         let dformatter = DateFormatter()
         dformatter.dateFormat = "HH:mm:ss.FFF"
         return dformatter.string(from: now)
     }
     
-    /// 获取URL时间戳
-    public func getUrlTimeStamp() -> String {
-        let now = Date()
-        let dformatter = DateFormatter()
-        dformatter.dateFormat = "HHmmss"
-        return dformatter.string(from: now)
-    }
 }
