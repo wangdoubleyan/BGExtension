@@ -11,7 +11,7 @@ import UIKit
 extension UIButton {
     
     /// 设置按钮背景颜色
-    func setBgColor(color:UIColor,for state:UIControlState) {
+    public func setBgColor(color:UIColor,for state:UIControlState) {
         self.setBackgroundImage(UIImage.imageWithColor(color: color), for: state)
     }
 }

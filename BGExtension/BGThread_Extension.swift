@@ -11,18 +11,18 @@ import UIKit
 extension Thread {
     
     /// 当前线程
-    static func printCurrentThread(){
+    public func printCurrentThread(){
         let currentThread = Thread.current
         BGPrint(message: "当前线程为:\(currentThread)")
     }
     
     /// 打印主线程名称
-    static func printMainThread() {
+    public func printMainThread() {
         let mainThread = Thread.main
         BGPrint(message: "应用程序的主线程:\(mainThread)")
     }
     
-    static func printIsMainThread() {
+    public func printIsMainThread() {
         let isMain = Thread.isMainThread
         BGPrint(message: "当前是否是主线程:\(isMain)")
     }

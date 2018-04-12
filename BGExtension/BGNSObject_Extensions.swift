@@ -18,6 +18,6 @@ extension NSObject {
     }
 }
 
-private func stringFromClass(_ type: AnyClass) -> String {
+public func stringFromClass(_ type: AnyClass) -> String {
     return NSStringFromClass(type).components(separatedBy: ".").last!
 }

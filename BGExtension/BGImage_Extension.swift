@@ -11,7 +11,7 @@ import UIKit
 extension UIImage {
     
     /// 颜色生成高度和宽度都为1的图片
-    static func imageWithColor(color:UIColor) -> UIImage {
+    public func imageWithColor(color:UIColor) -> UIImage {
         let rect:CGRect = CGRect.init(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContext(rect.size)
         let context:CGContext = UIGraphicsGetCurrentContext()!
@@ -24,7 +24,7 @@ extension UIImage {
     
     
     /// 等比例缩放图片
-    func scaleImage(scale:CGFloat) -> UIImage {
+    public func scaleImage(scale:CGFloat) -> UIImage {
         let size = CGSize.init(width: self.size.width*scale, height: self.size.height*scale)
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         var rect = CGRect.zero

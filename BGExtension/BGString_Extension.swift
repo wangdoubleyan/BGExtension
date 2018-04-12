@@ -26,7 +26,7 @@ extension String {
     ///   - font: 字体
     ///   - height: 高度
     /// - Returns: 字体宽度
-    func getWidth(withFont font:UIFont,andHeight height:CGFloat ) -> CGFloat {
+    public func getWidth(withFont font:UIFont,andHeight height:CGFloat ) -> CGFloat {
         return getTextRect(withFont: font, andHeight: height, orWidth: nil).width
     }
     
@@ -36,7 +36,7 @@ extension String {
     ///   - font: 字体
     ///   - width: 宽度
     /// - Returns: 内容高度
-    func getHeight(withFont font:UIFont,andWidth width:CGFloat ) -> CGFloat {
+    public func getHeight(withFont font:UIFont,andWidth width:CGFloat ) -> CGFloat {
         return getTextRect(withFont: font, andHeight: nil, orWidth: width).height
     }
     
@@ -46,7 +46,7 @@ extension String {
     ///   - font: 字体
     ///   - height: 高度
     /// - Returns: 字体宽度
-    func getTextRect(withFont font:UIFont,andHeight height:CGFloat?, orWidth width:CGFloat? ) -> CGRect {
+    public func getTextRect(withFont font:UIFont,andHeight height:CGFloat?, orWidth width:CGFloat? ) -> CGRect {
         let attributedText:NSAttributedString = NSAttributedString.init(string: self, attributes: [NSAttributedStringKey.font : font])
         var size = CGSize()
         if height == nil {

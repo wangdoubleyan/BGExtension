@@ -14,7 +14,7 @@ import UIKit
 ///   - message: <#message description#>
 ///   - file: <#file description#>
 ///   - lineNumber: <#lineNumber description#>
-func BGPrint<T>(message : T, file : String = #file, lineNumber : Int = #line){
+public func BGPrint<T>(message : T, file : String = #file, lineNumber : Int = #line){
     #if DEBUG
     let fileName = (file as NSString).lastPathComponent
     print("📝 [\(fileName):line:\(lineNumber)]- \(NSDate.getNowTime())- \(message)")
@@ -23,7 +23,7 @@ func BGPrint<T>(message : T, file : String = #file, lineNumber : Int = #line){
 }
 
 ///打印当前线程日志
-func BGPrintThread(){
+public func BGPrintThread(){
     Thread.printMainThread()
     Thread.printCurrentThread()
     Thread.printIsMainThread()

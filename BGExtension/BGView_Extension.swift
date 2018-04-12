@@ -66,13 +66,13 @@ extension UIView {
     }
     
     /// 设置圆角
-    func setCornerRadius(cornerRadius:CGFloat) {
+    public func setCornerRadius(cornerRadius:CGFloat) {
         self.layer.cornerRadius=cornerRadius
         self.layer.masksToBounds=true
     }
     
     /// 移除全部子
-    func removeAllSubview() {
+    public func removeAllSubview() {
         let subviewsArray : Array = self.subviews
         for view in subviewsArray {
             view.removeFromSuperview()
@@ -80,7 +80,7 @@ extension UIView {
     }
     
     /// 移除全部子
-    func removeSubview(withClass removeClassName:String) {
+    public func removeSubview(withClass removeClassName:String) {
         let subviewsArray : Array = self.subviews
         for view in subviewsArray {
             if view.className == removeClassName{
@@ -90,12 +90,12 @@ extension UIView {
     }
     
     /// 设置
-    func setBorder(color:UIColor,width:CGFloat) {
+    public func setBorder(color:UIColor,width:CGFloat) {
         self.layer.borderColor=color.cgColor
         self.layer.borderWidth=width
     }
     
-    func addTapGestureRecognizer(target: Any?, action: Selector) {
+    public func addTapGestureRecognizer(target: Any?, action: Selector) {
         let gr = UITapGestureRecognizer(target: target, action: action)
         gr.numberOfTapsRequired = 1
         isUserInteractionEnabled = true
@@ -105,17 +105,17 @@ extension UIView {
 
 class UIViewEffect : UIView {
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         backgroundColor = UIColor.groupTableViewBackground
     }
     
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         UIView.animate(withDuration: 0.15, animations: { () -> Void in
             self.backgroundColor = .clear
         })
     }
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         UIView.animate(withDuration: 0.15, animations: { () -> Void in
             self.backgroundColor = .clear
         })

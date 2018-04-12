@@ -12,7 +12,7 @@ extension UIColor {
     /// 启动图片
     ///
     /// - Returns: <#return value description#>
-    func showStartImages() ->UIColor {
+    public func showStartImages() ->UIColor {
         let infoDictionary=Bundle.main.infoDictionary
         let launchImagesArr:NSMutableArray = infoDictionary!["UILaunchImages"] as! NSMutableArray
         for launchImage in launchImagesArr {
