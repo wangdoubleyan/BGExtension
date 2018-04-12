@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension NSDate {
+public extension NSDate {
     /// 时间戳转换成时间
     public func timeStampToDate(timeStamp:String) -> Date {
         let timeInterval:TimeInterval = TimeInterval(timeStamp)!

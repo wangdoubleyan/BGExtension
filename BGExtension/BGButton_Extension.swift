@@ -8,15 +8,12 @@
 
 import UIKit
 
-extension UIButton {
-    
-    /// 设置按钮背景颜色
-    public func setBgColor(color:UIColor,for state:UIControlState) {
-        self.setBackgroundImage(UIImage.imageWithColor(color: color), for: state)
-    }
-}
-
 public extension UIButton {
+    
+    public func setBgColor(color:UIColor,for state:UIControlState) {
+        let image:UIImage = UIImage.init(color: color)
+        self.setBackgroundImage(image, for: state)
+    }
     
     /// Image of disabled state for button; also inspectable from Storyboard.
     @IBInspectable public var imageForDisabled: UIImage? {
