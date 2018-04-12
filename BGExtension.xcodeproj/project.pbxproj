@@ -24,7 +24,6 @@
 		3AC190C1207B4ABE0002FA6F /* BGImage_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC190C0207B4ABE0002FA6F /* BGImage_Extension.swift */; };
 		3AC190C3207B4ADC0002FA6F /* BGNSObject_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC190C2207B4ADC0002FA6F /* BGNSObject_Extensions.swift */; };
 		3AC190C5207B4B2D0002FA6F /* BGUIGestureRecognizer_Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC190C4207B4B2D0002FA6F /* BGUIGestureRecognizer_Extensions.swift */; };
-		3AC190C7207B4B4B0002FA6F /* BGNavigationBar_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC190C6207B4B4B0002FA6F /* BGNavigationBar_Extension.swift */; };
 		3AC190C9207B4B840002FA6F /* BGThread_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC190C8207B4B840002FA6F /* BGThread_Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,7 +58,6 @@
 		3AC190C0207B4ABE0002FA6F /* BGImage_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGImage_Extension.swift; sourceTree = "<group>"; };
 		3AC190C2207B4ADC0002FA6F /* BGNSObject_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGNSObject_Extensions.swift; sourceTree = "<group>"; };
 		3AC190C4207B4B2D0002FA6F /* BGUIGestureRecognizer_Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGUIGestureRecognizer_Extensions.swift; sourceTree = "<group>"; };
-		3AC190C6207B4B4B0002FA6F /* BGNavigationBar_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGNavigationBar_Extension.swift; sourceTree = "<group>"; };
 		3AC190C8207B4B840002FA6F /* BGThread_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGThread_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +113,6 @@
 				3AC190C0207B4ABE0002FA6F /* BGImage_Extension.swift */,
 				3AC190C2207B4ADC0002FA6F /* BGNSObject_Extensions.swift */,
 				3AC190C4207B4B2D0002FA6F /* BGUIGestureRecognizer_Extensions.swift */,
-				3AC190C6207B4B4B0002FA6F /* BGNavigationBar_Extension.swift */,
 				3AC190C8207B4B840002FA6F /* BGThread_Extension.swift */,
 				3A90D57B207E088300AB34BC /* BGTableView_Extensions.swift */,
 				3A90D57D207E0A9E00AB34BC /* BGExtension.swift */,
@@ -258,7 +255,6 @@
 				3AC190B5207B49E40002FA6F /* BGButton_Extension.swift in Sources */,
 				3AC190B3207B49CE0002FA6F /* BGViewController_Extension.swift in Sources */,
 				3AC190BD207B4A530002FA6F /* BGString_Extension.swift in Sources */,
-				3AC190C7207B4B4B0002FA6F /* BGNavigationBar_Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

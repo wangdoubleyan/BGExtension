@@ -22,7 +22,3 @@ public func BGPrint<T>(message : T, file : String = #file, lineNumber : Int = #l
     #endif
 }
 
-
-class BGLog: NSObject {
-
-}
